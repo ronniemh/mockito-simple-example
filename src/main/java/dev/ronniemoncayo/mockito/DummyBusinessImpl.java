@@ -15,10 +15,8 @@ public class DummyBusinessImpl {
         return greatest;
     }
 
-}
+    public DummyBusinessImpl(DataService dataService) {
+        this.dataService = dataService;
+    }
 
-interface DataService {
-
-    int[] retrieveAllData();
-    
 }
